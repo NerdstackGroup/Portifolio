@@ -1,0 +1,197 @@
+/* --- Root --- */
+:root {
+  --roxo: #412a6e;
+  --lilas: #8b54a5;
+  --white: #fff;
+  --logo: "Pixelify Sans", sans-serif;
+  --textos: "VT323", monospace;
+  --titulo: "Press Start 2P", system-ui;
+}
+
+/* --- Sobre --- */
+.sobre {
+  width: 100%;
+  min-height: 85vh;
+  background-image: url(../img/sobre-fundo.png);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+/* --- Caixa do Texto Sobre--- */
+.sobre-texto {
+  max-width: 55%;
+  padding: 30px;
+  background-color: var(--lilas);
+  border: 4px solid var(--white);
+  border-radius: 5px;
+  margin: auto;
+}
+
+/* --- Título Principal Sobre --- */
+.sobre-texto h1 {
+  font-family: var(--titulo);
+  color: var(--white);
+  letter-spacing: 5px;
+  font-size: 2.5rem;
+  line-height: 50px;
+  padding-bottom: 30px;
+  margin: auto;
+  max-width: 80%;
+}
+
+/* --- Subtítulo Sobre --- */
+.sobre-texto h2 {
+  font-family: var(--titulo);
+  color: var(--white);
+  font-size: 1.25rem;
+  padding-bottom: 30px;
+  margin: auto;
+  max-width: 80%;
+}
+
+/* --- Parágrafo Sobre --- */
+.sobre-texto p {
+  max-width: 80%;
+  text-align: justify;
+  color: var(--white);
+  font-size: 1.7rem;
+  font-family: var(--textos);
+  line-height: 35px;
+  padding-bottom: 15px;
+  margin: auto;
+}
+
+/* --- Span Atenção --- */
+.atencao {
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+/* --- Span criado pelo JS --- */
+span {
+  background-color: var(--lilas);
+}
+
+/* --- Tutorial --- */
+.tutorial {
+  width: 100%;
+  min-height: 108vh;
+  background-image: url(../img/instruções_fundo.png);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* --- Tutorial Conteúdo --- */
+.tutorial-conteudo {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 50px;
+}
+
+/* --- Título Tutorial --- */
+.tutorial-conteudo h2 {
+  font-size: 3.15rem;
+  font-family: var(--titulo);
+  color: var(--white);
+}
+
+/* --- Div que armazena a imagem do card e o botão Acessar --- */
+.card-individual {
+  position: relative;
+  width: 280px;
+}
+
+/* ---Imagem do card--- */
+.card-individual .card-imagem {
+  width: 100%;
+  height: auto;
+}
+
+/* --- Imagem do botão Acessar --- */
+.card-individual .btn-acessar {
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/* --- Trio e dupla de cards --- */
+.trio,
+.dupla {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* ----------------- Pop up e Slide / Caixa total -----------*/
+.caixa-card-textos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  min-height: 60vh;
+  background-color: var(--roxo);
+  border: 5px solid var(--white);
+  border-radius: 10px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Card onde os textos serão criados --- */
+.card-textos {
+  width: 100%;
+}
+
+/* --- Título do nosso texto - SERÁ CRIADO NO JS --- */
+.card-textos h1 {
+  font-size: 1.25rem;
+  font-family: var(--titulo);
+  text-align: center;
+  line-height: 40px;
+  padding: 40px 0px 20px 0px;
+  color: var(--white);
+}
+
+/* --- Parágrafo do nosso texto - SERÁ CRIADO NO JS --- */
+.card-textos p {
+  color: var(--white);
+  font-size: 1.7rem;
+  font-family: var(--textos);
+  text-align: justify;
+  max-width: 90%;
+  margin: auto;
+  line-height: 40px;
+  padding: 5px;
+}
+
+/* ---- Botões Próximo e Sair --------*/
+.btnProximo,
+.btnSair {
+  height: 100px;
+  cursor: pointer;
+  margin: 0px 5px 0px 5px;
+}
+
+/* --- Classe que esconde elementos ------*/
+.hidden {
+  display: none;
+}

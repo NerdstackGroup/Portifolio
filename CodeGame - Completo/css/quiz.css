@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap");
+
+:root {
+  --roxo: #412a6e;
+  --lilas: #8b54a5;
+  --white: #fff;
+  --logo: "Pixelify Sans", sans-serif;
+  --textos: "VT323", monospace;
+  --titulo: "Press Start 2P", system-ui;
+}
+
+/* Tela completa com header e quiz*/
+.quiz-tela-total {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 20px;
+  background-image: url(../img/quiz_fundo.png);
+  background-position: bottom;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Caixa do Título */
+.titulo {
+  width: 80%;
+  padding: 40px 0px 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Título */
+.titulo h1 {
+  background-color: var(--roxo);
+  padding: 5px;
+  color: var(--white);
+  font-size: 2.5rem;
+  font-family: var(--titulo);
+}
+
+/* Contador */
+.contador {
+  font-size: 2.5rem;
+  font-family: var(--textos);
+  color: var(--white);
+}
+
+/* Caixa da Questão completa */
+.questao-grupo {
+  width: 47%;
+  background-color: var(--lilas);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px 40px 0px;
+}
+
+/* Caixa que armazena a questão atual / contador / Botão próxima*/
+.questao-numero-proxima {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--white);
+  padding: 0px 10px 10px 10px;
+}
+
+/* Botão Próxima*/
+.confirmar {
+  height: 65px;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+/* Parágrafo que mostra o número da questão*/
+.questao-numero-proxima p {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-family: var(--textos);
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+
+/* Pergunta do quiz */
+.pergunta p {
+  text-align: center;
+  padding: 20px 20px;
+  color: var(--white);
+  font-size: 1.9rem;
+  letter-spacing: 5px;
+  font-family: var(--textos);
+}
+
+/* Opções de A até D*/
+.opcoes-respostas {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Botões que serão criados através do JavaScript */
+.opcoes-respostas button {
+  width: 100%;
+  min-height: 55px;
+  background-color: var(--roxo);
+  color: var(--white);
+  font-size: 1.9rem;
+  font-family: var(--textos);
+  padding-left: 20px;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Classe que esconde elementos */
+.hidden {
+  display: none;
+}
+
+/* Caixa onde o resultado e o parágrafo vão aparecer */
+.resultado-grupo {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+/* Nota final do quiz */
+.resultado-grupo .nota {
+  font-family: var(--titulo);
+  font-size: 5.65rem;
+  color: var(--white);
+}
+
+/* Frase com feedback final */
+.frase-resultado {
+  max-width: 40%;
+  color: white;
+  font-family: var(--textos);
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: var(--lilas);
+  border: 4px solid var(--white);
+  border-radius: 4px;
+}
+
+/* Span usado no JavaScript*/
+span {
+  background-color: var(--roxo);
+  padding: 0px 5px 0px 20px;
+  text-align: center;
+}

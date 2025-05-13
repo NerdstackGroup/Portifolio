@@ -1,0 +1,52 @@
+/*Cores e fontes usados*/
+:root {
+  --roxo: #412a6e;
+  --white: #fff;
+  --logo: "Pixelify Sans", sans-serif;
+  --textos: "VT323", monospace;
+  --titulo: "Press Start 2P", system-ui;
+}
+
+/* ---- Hero Conteúdo ----*/
+.hero-conteudo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding-top: 90px;
+}
+
+/* ---- Título -----*/
+.hero-conteudo h1 {
+  font-family: var(--titulo);
+  font-size: clamp(1.9rem, 8vw, 6.3rem);
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+
+/* ---- Botão -----*/
+.btn-start {
+  height: calc(80px + (50 * ((100vw - 320px) / (1500 - 320))));
+  margin-bottom: 50px;
+}
+
+/* ---- Parágrafo -----*/
+.explicacao-hero {
+  color: var(--white);
+  font-family: var(--textos);
+  max-width: 600px;
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+/* --- Telas menores -----*/
+@media (max-width: 1000px) {
+  .explicacao-hero {
+    padding-top: 10px;
+    max-width: 400px;
+  }
+}

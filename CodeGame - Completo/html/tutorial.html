@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeGame</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/tutorial.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <div class="header-conteudo">
+        <a href="home.html" class="logo"
+          ><img src="../img/logo.png" />Codegame</a
+        >
+        <nav>
+          <ul>
+            <li><i class="bx bx-x sair-menu" style="color: #ffffff"></i></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+          </ul>
+        </nav>
+
+        <i class="bx bx-menu burger-menu" style="color: #ffffff"></i>
+      </div>
+    </header>
+    <!--Fim do Header-->
+
+    <!-- Sobre -->
+    <div class="sobre">
+      <!-- Caixa com textos do Sobre -->
+      <div class="sobre-texto">
+        <h1>Sobre o jogo</h1>
+        <h2>Bem-vindo, jogador!</h2>
+        <p>
+          Você está prestes a embarcar em uma aventura para dominar as bases da
+          lógica de programação. Sua missão é aprender, praticar e testar seus
+          conhecimentos no nosso quiz especial.
+        </p>
+
+        <p>
+          <span class="atencao">Mas atenção!</span> Antes de começar, é muito
+          importante ler as instruções que estão logo abaixo. Elas vão preparar
+          você para a jornada que vem pela frente. Prepare-se e avance rumo à
+          vitória!
+        </p>
+      </div>
+    </div>
+    <!--Fim do Sobre-->
+
+    <!-- Tutorial -->
+    <div class="tutorial">
+      <div class="tutorial-conteudo">
+        <h2>Tutorial</h2>
+
+        <!--Caixa do Pop Up com Slide -->
+        <div class="caixa-card-textos hidden">
+          <div class="card-textos"></div>
+
+          <div class="sair-proxima">
+            <img src="../img/sair-btn.png" class="btnSair" />
+            <img src="../img/proxima-btn.png" class="btnProximo" />
+          </div>
+        </div>
+
+        <!-- Div com os 3 primeiros cards -->
+        <div class="trio">
+          <div class="card-individual">
+            <img src="../img/card_1.png" class="card-imagem" />
+            <img
+              src="../img/botao_acessar.png"
+              class="btn-acessar"
+              onclick="mostrar(textoVariavel)"
+            />
+          </div>
+
+          <div class="card-individual">
+            <img src="../img/card_2.png" class="card-imagem" />
+            <img
+              src="../img/botao_acessar.png"
+              class="btn-acessar"
+              onclick="mostrar(textoOperador)"
+            />
+          </div>
+
+          <div class="card-individual">
+            <img src="../img/card_3.png" class="card-imagem" />
+            <img
+              src="../img/botao_acessar.png"
+              class="btn-acessar"
+              onclick="mostrar(textoCondicional)"
+            />
+          </div>
+        </div>
+
+        <!-- Div com os 2 últimos cards-->
+        <div class="dupla">
+          <div class="card-individual">
+            <img src="../img/card_4.png" class="card-imagem" />
+            <img
+              src="../img/botao_acessar.png"
+              class="btn-acessar"
+              onclick="mostrar(textoFuncao)"
+            />
+          </div>
+
+          <div class="card-individual">
+            <img src="../img/card_5.png" class="card-imagem" />
+            <img
+              src="../img/botao_acessar.png"
+              class="btn-acessar"
+              onclick="mostrar(textoLoop)"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fim do Tutorial-->
+
+    <!--JavaScript-->
+    <script src="../js/header.js"></script>
+    <script src="../js/tutorial.js"></script>
+  </body>
+</html>

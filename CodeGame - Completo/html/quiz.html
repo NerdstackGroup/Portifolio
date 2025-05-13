@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeGame</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/quiz.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Tela total com header e a parte do quiz-->
+    <div class="quiz-tela-total">
+      <!--Header-->
+      <header>
+        <div class="header-conteudo">
+          <a href="home.html" class="logo"
+            ><img src="../img/logo.png" />Codegame</a
+          >
+          <nav>
+            <ul>
+              <li><i class="bx bx-x sair-menu" style="color: #ffffff"></i></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="tutorial.html">Tutorial</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+          </nav>
+
+          <i class="bx bx-menu burger-menu" style="color: #ffffff"></i>
+        </div>
+      </header>
+      <!--Fim da Header-->
+
+      <!--Título do quiz-->
+      <div class="titulo">
+        <h1>Quiz</h1>
+      </div>
+
+      <!--Caixa com o quiz-->
+      <div class="questao-grupo">
+        <!--Espaço com número da questão / contador / botão Próxma-->
+        <div class="questao-numero-proxima">
+          <p class="questaoNumero">Questão 1/10</p>
+          <div class="contador">30</div>
+          <img src="../img/botao_proxima.png" class="confirmar" />
+        </div>
+
+        <!--Pergunta-->
+        <div class="pergunta"></div>
+
+        <!--Opções de A até D-->
+        <div class="opcoes-respostas"></div>
+      </div>
+
+      <!--Tela de resultado-->
+      <div class="resultado-grupo hidden">
+        <p class="nota"></p>
+        <p class="frase-resultado hidden"></p>
+      </div>
+    </div>
+    <!--Fim da tela-->
+
+    <!--JavaScript-->
+    <script src="../js/header.js"></script>
+    <script src="../js/quiz.js"></script>
+  </body>
+</html>
